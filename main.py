@@ -26,8 +26,8 @@ entrada.grid(
 def botao_click(num):
     entrada.insert(END, num)
 
-def botao_ponto(num):
-    entrada.insert(END, num)
+def botao_ponto():
+    entrada.insert(END, ".")
 
 def botao_divisao():
     global numero1
@@ -68,16 +68,16 @@ def botao_igual():
     numero2 = entrada.get()
     entrada.delete(0, END)
     if soma == TRUE:
-        entrada.insert(0, int(numero1) + int(numero2))
+        entrada.insert(0, float(numero1) + float(numero2))
         soma = FALSE
     if multiplica == TRUE:
-        entrada.insert(0, int(numero1) * int(numero2))
+        entrada.insert(0, float(numero1) * float(numero2))
         multiplica = FALSE
     if subtracao == TRUE:
-        entrada.insert(0, int(numero1) - int(numero2))
+        entrada.insert(0, float(numero1) - float(numero2))
         subtracao = FALSE
     if divisao == TRUE:
-        entrada.insert(0, int(numero1) / int(numero2))
+        entrada.insert(0, float(numero1) / float(numero2))
         divisao = FALSE
 
 divisao = Button(root,
