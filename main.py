@@ -14,7 +14,7 @@ multiplica = FALSE
 soma = FALSE
 subtracao = FALSE
 
-entrada = Entry(root, width=15, borderwidth=4, relief=FLAT, fg='#FFFFFF', bg='#a7a28f', font=('futura', 25, 'bold'), justify=CENTER) # DEFINE UMA ENTRADA E SUAS CARACTERISTICAS NA TELA
+entrada = Entry(root, width=15, borderwidth=4, relief=FLAT, fg='#FFFFFF', bg='#404040', font=('futura', 25, 'bold'), justify=LEFT) # DEFINE UMA ENTRADA E SUAS CARACTERISTICAS NA TELA
 entrada.grid(
     row=0,
     column=0,
